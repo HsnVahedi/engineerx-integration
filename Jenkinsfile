@@ -16,7 +16,10 @@ pipeline {
         }
         stage('Invoke Integration Test') {
             steps {
-                build job: 'integration-test'
+                build job: 'integration-test', parameters: [
+                    string(name: "REGION", value: "${env.REGION}"),
+                    string(name: "CLUSTER_NAME", value: "${env.CLUSTER_NAME}")
+                ]
             }
         }
     }
