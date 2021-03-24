@@ -47,25 +47,17 @@ In testing terminology, phrases like `unit tests` and `integration tests` could 
 
 ## Run this project
 
+#### Requirements:
+To be able to run these integration tests locally, First you have to start the main project which consists of backend and frontend microservices. Follow the [instructinos on frontend repository](https://github.com/HsnVahedi/engineerx-frontend#run-this-project) to start backend microservices, initialize database and start frontend microservice on `127.0.0.1:3000/`.
+
+After starting the project on `127.0.0.1:3000/` do the following steps to run integration tests locally.
 
 #### 1. Clone this repository:
-    git clone https://github.com/HsnVahedi/engineerx-frontend
-#### 2. Pull the required backend docker images:
-    cd engineerx-frontend
-    docker-compose -f backend-docker-compose.yaml pull
-#### 3. Start the backend production server:
-    docker-compose -f backend-docker-compose.yaml up
-#### 4. Now open another terminal and execute bash in the backend container:
-    docker-compose -f backend-docker-compose.yaml exec backend bash
-#### 5. Initialize the database with randomly generated objects:
-    python manage.py initdb
-#### 6. Now open another terminal and Install npm packages:
+    git clone https://github.com/HsnVahedi/engineerx-integration
+#### 2. Install npm packages:
     npm install
-#### 7. Run frontend microservice:
-If you want to run development environment, simply run `npm run dev`. If you want to run production environment run `export LOCAL=1 && npm run build && npm run start`.
-    
-Now you can see the project is running on `127.0.0.1:3000/`.
-
+#### 3. Open cypress:
+    npx cypress open --config-file cypress.dev.json
 
 
 ## EngineerX code repositories
