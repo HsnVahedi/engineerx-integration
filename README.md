@@ -13,7 +13,7 @@
 ## Table of contents
 
 - [Introduction to EngineerX project](#introduction-to-engineerx-project)
-- [What does Integration Test mean?](#what-does-integration-test-mean?)
+- [What does Integration Test mean](#what-does-integration-test-mean)
 - [Cypress](#cypress)
 - [Run this project](#run-this-project)
 - [EngineerX code repositories](#engineerx-code-repositories)
@@ -42,65 +42,11 @@ Key features of the project:
 
 
 
-## What does Integration Test mean?
+## What does Integration Test mean
 In testing terminology, phrases like `unit tests` and `integration tests` could mean different things in different contexts. In this project, `integration tests` means tests that include both [backend](https://github.com/HsnVahedi/engineerx-backend) and [frontend](https://github.com/HsnVahedi/engineerx-frontend) microservices.
-
-## Cypress
-In testing terminology, phrases like `unit tests` and `integration tests` could mean different things in different contexts. In this project, `integration tests` means tests that include both [backend](https://github.com/HsnVahedi/engineerx-backend) and [frontend](https://github.com/HsnVahedi/engineerx-frontend) microservices.
-
-#### 1. SEO friendly
-Unlike `create-react-app`, nextjs renders html files at server side. So search engine crawlers can easily read the website.
-
-#### 2. Supporting multiple Data-fetching methods
-Nextjs provides powerful tools for data-fetching. Frontend developers can combine different ways of data-fetching to construct the most optimized application.
-
-For example, here is our Post page:
-
-
-    const Page = ({ post }) => {
-      const postJson = JSON.parse(post);
-      return (
-        <Layout>
-          <Post post={postJson} />
-        </Layout>
-      );
-    };
-
-    export const getStaticProps = async ({ params, preview, previewData }) => {
-      const post = await getPostBySlug(params.slug);
-        if (post) {
-          return {
-            props: {
-              post: JSON.stringify(post),
-            },
-            revalidate: 5,
-          };
-        } else {
-            return {
-              notFound: true,
-            };
-        }
-    };
-
-    export const getStaticPaths = async () => {
-      const slugs = await getPostSlugs();
-      return {
-        paths: slugs.map((slug) => `/posts/${encodeURIComponent(slug)}`),
-        fallback: "blocking",
-      };
-    };
-    
-These two serverless functions (`getStaticProps` and `getStaticPaths`) are used to generate all posts at build stage (`npm run build`). This means when a user's bowser requests a page, it's already there! But unlike static site generators, the created html files can get updated after that. 
-
-Nextjs also provides `getServerSideProps` and `useSWR` hook for other scenarios. To read more about nextjs data-fetching check [this](https://nextjs.org/docs/basic-features/data-fetching) out.
-
-#### 3. Nextjs image optimization
-For more details check [this](https://nextjs.org/docs/basic-features/image-optimization) out.
-
-#### 4. Material UI
-This project is built using [Material UI](https://material-ui.com/).
 
 ## Run this project
+
 
 #### 1. Clone this repository:
     git clone https://github.com/HsnVahedi/engineerx-frontend
