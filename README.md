@@ -14,7 +14,6 @@
 
 - [Introduction to EngineerX project](#introduction-to-engineerx-project)
 - [What does Integration Test mean](#what-does-integration-test-mean)
-- [Cypress](#cypress)
 - [Run this project](#run-this-project)
 - [EngineerX code repositories](#engineerx-code-repositories)
 
