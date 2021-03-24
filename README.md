@@ -47,7 +47,7 @@ In testing terminology, phrases like `unit tests` and `integration tests` could 
 ## Run this project
 
 #### Requirements:
-To be able to run these integration tests locally, First you have to start the main project which consists of backend and frontend microservices. Follow [these instructinos](https://github.com/HsnVahedi/engineerx-frontend#run-this-project) on frontend repository to start backend microservices, initialize database and start frontend microservice on `127.0.0.1:3000/`.
+To be able to run these integration tests locally, First you have to start the main project which consists of backend and frontend microservices. Follow [these instructinos](https://github.com/HsnVahedi/engineerx-frontend#run-this-project) to start backend microservices, initialize database and start frontend microservice on `127.0.0.1:3000/`.
 
 After starting the project on `127.0.0.1:3000/` do the following steps to run integration tests locally.
 
