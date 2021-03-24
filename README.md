@@ -1,11 +1,11 @@
 <p align="center">
 
-  <h3 align="center">EngineerX Frontend Microservices</h3>
+  <h3 align="center">EngineerX Integration Test Microservice</h3>
 
   <p align="center">
-    <a href="https://github.com/HsnVahedi/engineerx-frontend/issues/new">Report bug</a>
+    <a href="https://github.com/HsnVahedi/engineerx-integration/issues/new">Report bug</a>
     ·
-    <a href="https://github.com/HsnVahedi/engineerx-frontend/issues/new">Request feature</a>
+    <a href="https://github.com/HsnVahedi/engineerx-integration/issues/new">Request feature</a>
   </p>
 </p>
 
@@ -13,7 +13,8 @@
 ## Table of contents
 
 - [Introduction to EngineerX project](#introduction-to-engineerx-project)
-- [What's included](#whats-included)
+- [What does Integration Test mean?](#what-does-integration-test-mean?)
+- [Cypress](#cypress)
 - [Run this project](#run-this-project)
 - [EngineerX code repositories](#engineerx-code-repositories)
 
@@ -41,8 +42,11 @@ Key features of the project:
 
 
 
-## What's included
-This repository contains the project's frontend microservice. It's a modern react application created by nextjs framework. It has these nice features:
+## What does Integration Test mean?
+In testing terminology, phrases like `unit tests` and `integration tests` could mean different things in different contexts. In this project, `integration tests` means tests that include both [backend](https://github.com/HsnVahedi/engineerx-backend) and [frontend](https://github.com/HsnVahedi/engineerx-frontend) microservices.
+
+## Cypress
+In testing terminology, phrases like `unit tests` and `integration tests` could mean different things in different contexts. In this project, `integration tests` means tests that include both [backend](https://github.com/HsnVahedi/engineerx-backend) and [frontend](https://github.com/HsnVahedi/engineerx-frontend) microservices.
 
 #### 1. SEO friendly
 Unlike `create-react-app`, nextjs renders html files at server side. So search engine crawlers can easily read the website.
