@@ -61,7 +61,7 @@ Open another terminal and run this command:
 
     docker-compose exec backend python manage.py createsuperuser
 #### 6. Open Cypress
-Now the application server is up and running on `http://127.0.0.1:3000`. Administration pages are accessiblle on `http://127.0.0.1:8000/admin`.
+Now the application server is up and running on `http://127.0.0.1:3000`. Administration pages are accessible on `http://127.0.0.1:8000/admin`.
 
 We have to install and open cypress:
     
